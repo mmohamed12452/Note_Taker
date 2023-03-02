@@ -9,13 +9,13 @@ const path = require("path");
 
 
 //getting the notes route= api/notes
-router.get("/notes", (res, req)=>{
+router.get("/notes", (req, res)=>{
     console.log({data});
     res.json(data);
 });
 
 //delete a note using its id route= /api/notes/:id
-router.delete("/notes/:id", (res, req)=>
+router.delete("/notes/:id", (req, res)=>
 {
     data = data.filter((el) => el.id !== req.params.id);
     fs.writeFile(
@@ -33,7 +33,7 @@ router.delete("/notes/:id", (res, req)=>
 
 
 //post the data
-router.post("/note", (res, freq)=>{
+router.post("/note", (req, res)=>{
     const newNote = {...req.body, id:uuidv4()};
     data.unshift(newNote);
     fs.writeFile(
@@ -52,5 +52,6 @@ router.post("/note", (res, freq)=>{
 });
 
 module.export = router;
+
 
 
