@@ -25,8 +25,7 @@ http://localhost:3001/notes
 Created by Mohamed
 
 # Questions
-For additional questions and information, please go to github.com/
-
+For additional questions and information, please go to https://github.com/mmohamed12452/Note_taker
 
 # License
 MIT
