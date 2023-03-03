@@ -17,7 +17,9 @@ When clicking on an existing note in the list in the left-hand column, that note
 
 
 # Website
+http://localhost:3001
 
+http://localhost:3001/notes
 
 # Credits
 Created by Mohamed
